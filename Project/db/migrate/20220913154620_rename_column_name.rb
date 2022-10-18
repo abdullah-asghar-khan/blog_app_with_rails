@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class RenameColumnName < ActiveRecord::Migration[7.0]
-    def change
-      rename_column :likes, :users_id, :author_id
-    end
+  def change
+    rename_column :likes, :users_id, :author_id
+  end
 end
