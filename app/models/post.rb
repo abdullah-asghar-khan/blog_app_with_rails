@@ -4,10 +4,11 @@ class Post < ApplicationRecord
     has_many :likes
   
     def update_post_counter
-      author.posts_counter = author.posts.size
+      # author.posts_counter = author.posts.size
+      author.increment!(:posts_counter)
     end
   
-    def five_recent_comments
-      comments.last(5)
+    def five_recent_comments    
+      comments.order('created_at desc').limits(5)
     end
 end
