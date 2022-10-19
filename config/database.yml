@@ -1,0 +1,19 @@
+default: &default
+ adapter: postgresql
+ encoding: unicode
+ user: Abdullah19
+ host: localhost
+ password: Iamkhan10
+ port: 5432
+ pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+development:
+ <<: *default
+ database: blogapp_development
+test:
+ <<: *default
+ database: blogapp_test
+production:
+ <<: *default
+ database: blogapp_production
+ username: Abdullah19
+ password: <%= ENV["RAILSBLOG_DATABASE_PASSWORD"] %>
