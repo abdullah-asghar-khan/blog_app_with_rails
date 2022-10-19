@@ -8,7 +8,7 @@ class Post < ApplicationRecord
       author.increment!(:posts_counter)
     end
   
-    def five_recent_comments    
+    def five_recent_comments
       comments.order('created_at desc').limits(5)
     end
 end
