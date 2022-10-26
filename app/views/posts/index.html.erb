@@ -1,1 +1,14 @@
-<h1>This is all users posts</h1>
+<div>  
+  <%=render 'users/user', user: @user %>  
+  <div>
+    <% @posts.each do |post| %>
+      <%=render 'post', post: post %>
+      <div class="my_border de_post_comments">
+        <% post.five_recent_comments.each do |comment| %> 
+            <%=render 'shared/comment', comment: comment %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+  <%= button_tag 'Pagination', type: 'button', class: "btn pagination" %>
+</div>
