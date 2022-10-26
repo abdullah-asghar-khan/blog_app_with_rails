@@ -1,1 +1,22 @@
-<span>This is specific post of specific users></span>
+<div class="full_post_container">
+  <div class="my_border">
+    <div class="full_post_header" >
+      <span>
+        <%= @post.title %> by
+        <%= @user.name  %>
+      </span>
+      <div>      
+        <span>Comments: <%= @post.comments_counter %></span>,
+        <span>Likes: <%= @post.likes_counter %></span>      
+      </div>
+    </div>
+    <div class="post_text">
+      <%= @post.text %>
+    </div>
+  </div>
+  <div class="my_border de_post_comments">
+    <% @post.comments.each do |comment| %> 
+          <%=render 'shared/comment', comment: comment %>
+    <% end %>
+  </div>    
+</div>
