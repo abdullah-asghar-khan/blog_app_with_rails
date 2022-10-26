@@ -1,0 +1,50 @@
+.full_post_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.full_post_container > div:first-child {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.post_card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+
+.comments {
+  display: flex;
+}
+
+.post_comments {
+  width: max-content;
+  align-self: flex-end;
+}
+
+.post_comments span {
+  font-size: 14px;
+}
+
+.post_card p {
+  margin-top: 1rem;
+}
+
+.de_post_comments {
+  margin-top: 0.4rem;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.full_post_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_text {
+  margin-top: 0.4rem;
+}

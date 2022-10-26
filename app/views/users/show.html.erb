@@ -1,1 +1,15 @@
-<span>Here is a list of posts for specific user</span>
+<div>
+  <%=render 'user', user: @user %>
+  <div class="user_bio my_border">
+    <h3>Bio</h3>
+    <p><%= @user.bio %></p>
+  </div>
+  <div>    
+    <% @user.last_three_posts.each do |post| %>
+      <%= render "posts/post", post: post %>
+    <% end %>    
+  </div>
+  <%= link_to user_posts_path(@user.id) do %>
+    <%= button_tag 'See all posts', type: 'button', class: "see_all_btn btn" %>
+  <% end %>
+</div>

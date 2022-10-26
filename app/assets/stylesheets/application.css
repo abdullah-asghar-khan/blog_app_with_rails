@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.my-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@import url("user_index");
+@import url("user_show");
+@import url("post_index");
+@import url("post_show")
