@@ -249,7 +249,7 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.1.0)
       railties (>= 6.0.0)
-    tailwindcss-rails (2.0.14-x64-mingw-ucrt)
+    tailwindcss-rails (2.0.16-x64-mingw-ucrt)
       railties (>= 6.0.0)
     thor (1.2.1)
     timeout (0.3.0)
