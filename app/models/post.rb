@@ -11,7 +11,7 @@ class Post < ApplicationRecord
   validates :likes_counter, comparison: { greater_than_or_equal_to: 0 }
 
   after_save :update_posts_counter
-  
+
   def update_posts_counter
     author.increment!(:posts_counter)
   end
