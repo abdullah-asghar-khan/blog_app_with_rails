@@ -48,3 +48,12 @@
 .post_text {
   margin-top: 0.4rem;
 }
+
+.create_btn {
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+
+.form-comment {
+  margin-top: 1rem;
+}
