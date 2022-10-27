@@ -23,6 +23,9 @@
 .my-container {
   display: flex;
   flex-direction: column;
+  margin-top: 7rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 @import url("user_index");
