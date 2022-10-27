@@ -6,17 +6,30 @@
         <%= @user.name  %>
       </span>
       <div>      
-        <span>Comments: <%= @post.comments_counter %></span>,
-        <span>Likes: <%= @post.likes_counter %></span>      
+        <span>Comments: <%= @post.comments_counter %>
+        </span>,
+        <span>Likes: <%= @post.likes_counter %>
+        </span>      
       </div>
     </div>
     <div class="post_text">
       <%= @post.text %>
     </div>
   </div>
+
+  <%= button_to 'Like',
+    user_post_likes_path(post_id: @post.id),
+    class: 'create_btn my_border'
+  %>
+
   <div class="my_border de_post_comments">
-    <% @post.comments.each do |comment| %> 
-          <%=render 'shared/comment', comment: comment %>
+    <% if @post.comments.empty? %>
+     <Span>No comment</span>
+    <% else  %>
+      <% @post.comments.each do |comment| %> 
+            <%=render 'shared/comment', comment: comment %>
+      <% end %>
     <% end %>
-  </div>    
+  </div>
+  <%= render partial: 'shared/comment_form', locals: { post_id: @post.id, user_id: @current_user.id } %>   
 </div>
