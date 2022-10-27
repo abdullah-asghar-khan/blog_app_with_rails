@@ -1,11 +1,11 @@
 <div>  
-    <%=render 'users/user', user: @user %>
+  <%=render 'users/user', user: @user %>
 
-<div class="post-create-btn-container">
-  <button type="button" class="post-create-btn">
-    <%= link_to "Create a new post", new_user_post_path %>
+  <button type="button" class="create_btn my_border">
+    <%= link_to "Create new post", new_user_post_path %>
   </button>
-</div> 
+
+
   <div>
     <% @posts.each do |post| %>
       <%=render 'post', post: post %>
