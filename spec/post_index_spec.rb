@@ -53,5 +53,4 @@ RSpec.describe 'Posts index' , type: :feature do
         click_on @first_post.title
         expect(page).to have_current_path(user_post_path(user_id: @user.id, id: @first_post.id))
     end
-
 end
