@@ -27,5 +27,4 @@ RSpec.describe "UsersIndex", type: :feature do
         click_link(@user.name)
         expect(page).to have_current_path(user_path(@user.id))
     end
-    
 end
