@@ -17,4 +17,8 @@ RSpec.describe "PostShow", type: :feature do
     expect(page).to have_content(@post.title)
   end
 
+  it 'Display the post author' do
+    expect(page).to have_content(@user.name)
+  end
+
 end
