@@ -6,7 +6,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(id: params[:id])
-    @user = User.find_by(id: params[:user_id])
+    @comments = @post.comments.includes(:author)
     @current_user = current_user
   end
 
