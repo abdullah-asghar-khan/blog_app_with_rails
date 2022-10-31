@@ -21,4 +21,12 @@ RSpec.describe "PostShow", type: :feature do
     expect(page).to have_content(@user.name)
   end
 
+  it 'I can see how many comments the post has' do
+    expect(page).to have_content("Comments: #{@post.comments_counter}")
+  end
+
+  it 'I can see how many likes the post has' do
+    expect(page).to have_content("Likes: #{@post.likes_counter}")
+  end
+
 end
