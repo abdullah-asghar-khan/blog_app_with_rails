@@ -10,7 +10,7 @@
     <% @posts.each do |post| %>
       <%=render 'post', post: post %>
       <div class="my_border de_post_comments">
-        <% post.five_recent_comments.each do |comment| %> 
+        <% post.five_recent_comments.includes(:author).each do |comment| %>
             <%=render 'shared/comment', comment: comment %>
         <% end %>
       </div>

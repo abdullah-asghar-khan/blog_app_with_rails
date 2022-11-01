@@ -38,9 +38,10 @@ Git clone https://github.com/Abdullah2213565/blog_app_with_rails.git
 
 ## Authors
 
-| 👤 Name | Github | Twitter | LinkedIn |
-|------|--------|---------|----------|
-|Abdullah Asghar|[@Abdullah](https://github.com/Abdullah2213565)|[@Abdullah](https://twitter.com/dulakhan024)|[@AbdullahKhan](https://www.linkedin.com/in/abdullah-khan2002/)|
+| 👤 Name              | Github                                          | Twitter                                         | LinkedIn                                                        |
+|----------------------|-------------------------------------------------|-------------------------------------------------|-----------------------------------------------------------------|
+| Abdullah Asghar      | [@Abdullah](https://github.com/Abdullah2213565) | [@Abdullah](https://twitter.com/dulakhan024)    | [@AbdullahKhan](https://www.linkedin.com/in/abdullah-khan2002/) |
+| Abdelmejid Oumer Ali | [@amejid](https://github.com/amejid)            | [@amejidoumer](https://twitter.com/amejidoumer) | [@amejid](https://www.linkedin.com/in/amejid/)                  |
 
 
 ## 🤝 Contributing

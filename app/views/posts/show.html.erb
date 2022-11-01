@@ -3,7 +3,7 @@
     <div class="full_post_header" >
       <span>
         <%= @post.title %> by
-        <%= @user.name  %>
+        <%= @post.author.name  %>
       </span>
       <div>      
         <span>Comments: <%= @post.comments_counter %>
@@ -23,10 +23,10 @@
   %>
 
   <div class="my_border de_post_comments">
-    <% if @post.comments.empty? %>
+    <% if @comments.empty? %>
      <Span>No comment</span>
     <% else  %>
-      <% @post.comments.each do |comment| %> 
+      <% @comments.each do |comment| %> 
             <%=render 'shared/comment', comment: comment %>
       <% end %>
     <% end %>
