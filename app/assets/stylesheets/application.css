@@ -28,6 +28,53 @@
   padding-right: 1.25rem;
 }
 
+.sign_in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sign_in h2, .sign_up h2 {
+  margin-bottom: 1.5rem;
+}
+
+.new_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.new_user .field {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-bottom: 1.25rem;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 1.25rem;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="submit"] {
+  width: 80%;
+  height: 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+}
+
+.sign_up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @import url("user_index");
 @import url("user_show");
 @import url("post_index");
