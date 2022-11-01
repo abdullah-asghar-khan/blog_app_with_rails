@@ -29,8 +29,7 @@
   padding-right: 1.25rem;
 }
 
-.sign_in
-.sign_up {
+.sign_in .sign_up {
   display: flex;
   flex-direction: column;
   align-items: center;
