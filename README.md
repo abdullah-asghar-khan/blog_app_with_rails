@@ -23,6 +23,7 @@ To get a local copy up and running follow these simple example steps.
 - Ruby
 - Ruby on rails
 - Any IDE of your choice
+- SQL
 
 ### Setup
 
